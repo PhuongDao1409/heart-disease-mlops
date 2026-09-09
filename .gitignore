@@ -1,0 +1,12 @@
+﻿venv/
+env/
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+data/*.csv
+.ipynb_checkpoints/
+*.pkl
+*.h5
