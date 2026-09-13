@@ -1,0 +1,8 @@
+﻿version: "2"
+tunnels:
+  ai_server:
+    proto: http
+    addr: 8000
+  web_backend:
+    proto: http
+    addr: 8501

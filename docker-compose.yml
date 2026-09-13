@@ -1,0 +1,18 @@
+﻿version: '3.8'
+
+services:
+  ai_server:
+    build: ./ai_server
+    ports:
+      - "8000:8000"
+    restart: always
+
+  web_backend:
+    build: ./web_backend
+    ports:
+      - "8501:8501"
+    environment:
+      - AI_SERVER_URL=http://ai_server:8000
+    depends_on:
+      - ai_server
+    restart: always
